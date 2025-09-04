@@ -1,0 +1,15 @@
+// конфигурационный файл
+
+plugins {
+    id "java-library"         // указываем использование языка Java
+}
+
+
+repositories {               // адресс, ссылка на репозиторий
+    mavenCentral()
+}
+
+dependencies {                // Зависимости
+    testImplementation("com.codeborne:selenide:6.19.1",)   // подключение селенида
+
+}
