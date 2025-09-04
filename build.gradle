@@ -10,6 +10,12 @@ repositories {               // адресс, ссылка на репозито
 }
 
 dependencies {                // Зависимости
-    testImplementation("com.codeborne:selenide:6.19.1",)   // подключение селенида
+    testImplementation("com.codeborne:selenide:6.19.1",   // подключение селенида
+            "org.junit.jupiter:junit-jupiter:5.9.3",      // подключение junit 5
+    )
 
+}
+
+test {
+    useJUnitPlatform()        // говорим гредлу чт подключаем Junjt5
 }
